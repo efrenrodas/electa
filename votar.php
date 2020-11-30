@@ -8,7 +8,7 @@ include "conexion.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="slylesheet" type="text/css" href="css.css">
     <title>Elige Partido</title>
 </head>
 <?php
@@ -39,10 +39,10 @@ if ($result->num_rows > 0) {
         <div class="row">
             <div class="col-sm-4">
               <div class="radio">
-                  
-                 <img src="images/lista4.jpg" width="400" height="200"> <br>
-                 <label>
-                <input type="radio" name="optradio" value="2" checked>LISTA 4</label>
+                   <img src="images/lista4.jpg" width="400" height="200"> <br>
+                 
+                   <label>  <input type="radio" name="optradio" value="2" >LISTA 4</label>
+               
                     </div>
             </div>
             <div class="col-sm-4">
@@ -76,6 +76,7 @@ if ($result->num_rows > 0) {
 <input type="hidden" name='idVot' value="<?php echo $idVotantes; ?>">
     </form>
 </body>
+
 </html>
 <?php
     }
