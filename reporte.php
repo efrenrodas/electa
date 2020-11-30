@@ -16,7 +16,7 @@ for($i=1;$i<=14;$i++)
 
     
 
-for($j=1;$j<=5;$j++)
+for($j=1;$j<=6;$j++)
 {
     $sql="SELECT COUNT(*) from votantes where listas_idlistas=$j and curso like '$curso'";
 //echo $sql;
@@ -46,7 +46,7 @@ break;
 }
 
 if($j!=4){
-   echo "En el curso ".$curso." la cantidad de votos por la lista ".$lista." es ".$voto."<br>";
+   //echo "En el curso ".$curso." la cantidad de votos por la lista ".$lista." es ".$voto."<br>";
 }
 else{
     echo "En el curso ".$curso." la cantidad de estudiantes ".$lista." es ".$voto."<br>"; 
