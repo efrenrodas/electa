@@ -40,38 +40,32 @@ if ($result->num_rows > 0) {
             <div class="col-sm-4">
               <div class="radio">
                   
-                 <img src="images/lista4.jpeg" width="200" height="200"> <br>
+                 <img src="images/lista4.jpg" width="400" height="200"> <br>
                  <label>
-                <input type="radio" name="optradio" value="1" checked>LISTA 4</label>
+                <input type="radio" name="optradio" value="2" checked>LISTA 4</label>
                     </div>
             </div>
             <div class="col-sm-4">
                 <div class="radio">
-                <img src="images/lista5.jpeg"width="200" height="200"> <br>
-                <label><input type="radio"  value="2" name="optradio">LISTA  5</label>
+                <img src="images/lista5.jpg"width="400" height="200"> <br>
+                <label><input type="radio"  value="1" name="optradio">LISTA  5</label>
                 </div>
             </div>
             <div class="col-sm-4">
                  <div class="radio">
-                 <img src="images/lista7.jpeg"width="200" height="200"> <br>
-                <label><input type="radio"  value="3" name="optradio">LISTA 7</label>
+                 <img src="images/lista10.jpg"width="400" height="200"> <br>
+                <label><input type="radio"  value="3" name="optradio">LISTA 10  </label>
                 </div>
             </div>
             <div class="col-sm-4">
                  <div class="radio">
-                 <img src="images/lista10.jpeg"width="200" height="200"> <br>
-                <label><input type="radio"  value="4" name="optradio">LISTA 10  </label>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                 <div class="radio">
-                 <img src="images/lista2.jpeg"width="200" height="200"> <br>
+                 <img src="images/blanco.jpg"width="400" height="200"> <br>
                 <label><input type="radio"  value="5" name="optradio">BLANCO  </label>
                 </div>
             </div>
             <div class="col-sm-4">
                  <div class="radio">
-                 <img src="images/lista2.jpeg"width="200" height="200"> <br>
+                 <img src="images/nulo.jpg"width="400" height="200"> <br>
                 <label><input type="radio"  value="6" name="optradio">NULO  </label>
                 </div>
             </div>
