@@ -40,6 +40,10 @@ echo '
   <strong>Ya ha votado!</strong> Has Votado <a href="index.html" class="alert-link">Regresar al inicio</a>.
 </div>
 
+<div class="alert alert-danger">
+  <strong>Ya ha registrado su voto!</strong> Has Votado <a href="vistaReporte.html" class="alert-link">Ver resultados en vivo</a>.
+</div>
+
 ';    
 }
 

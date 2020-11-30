@@ -18,6 +18,23 @@
     <title>Por Curso</title>
 </head>
 <body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>REPORTE DE VOTOS</h1>  <center>    
+    <img src="images/logov2.jpg" class="mx-auto rounded-circle" alt="Cinque Terre"> 
+</center>
+    <p>Este reporte muestra los votos por curso</p>
+    <a href="#" onclick="print()" class="btn btn-info" role="button">CLIC PARA IMPRIMIR</a>
+  </div>
+  
+  
+</div>
+
+<div class="container">
+  <p> </p>     
+  
+</div>
 <?php
 include 'conexion.php';
 $Valores=$_POST['InfoCurso'];
@@ -27,7 +44,12 @@ list($curso,$cantidadT)=explode("-",$Valores);
 // Los delimitadores pueden ser barra, punto o guión
 for($j=1;$j<=6;$j++)
 {
+    if($curso=="todos"){
+        $sql="SELECT COUNT(*) from votantes where listas_idlistas=$j and rol='estudiante'";
+    }
+    else{
     $sql="SELECT COUNT(*) from votantes where listas_idlistas=$j and curso like '$curso'";
+    }
 //echo $sql;
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
@@ -69,6 +91,9 @@ break;
  
 }//fim del cilo for
 ?>
+<div class="alert alert-success">
+  <strong>Reporte correcto !</strong> <a href="index.html" class="alert-link">Regresar</a>.
+</div>
 </body>
 </html>
 

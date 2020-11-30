@@ -1,5 +1,4 @@
 <?php
-
 include 'conexion.php';
 for($i=1;$i<=14;$i++)
 {
@@ -46,7 +45,7 @@ break;
 }
 
 if($j!=4){
-   //echo "En el curso ".$curso." la cantidad de votos por la lista ".$lista." es ".$voto."<br>";
+   echo "En el curso ".$curso." la cantidad de votos por la lista ".$lista." es ".$voto."<br>";
 }
 else{
     echo "En el curso ".$curso." la cantidad de estudiantes ".$lista." es ".$voto."<br>"; 
