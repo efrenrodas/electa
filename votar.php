@@ -23,6 +23,9 @@ if ($result->num_rows > 0) {
              $_SESSION['user'] = $row["cedula"];
              $estado=$row["estado"];
              $idVotantes=$row['idvotantes'];
+             $nombres=$row['nombres'];
+             $apellidos=$row['apellidos'];
+             $rol=$row['rol'];
                           //echo "Usuario: ".$row["Usuario"]."-Clave: ".$row["Clave"];
              //echo "login correcto";
             // header("Location: perfil.php");
@@ -33,7 +36,7 @@ if ($result->num_rows > 0) {
 
 <body>
 <div class="alert alert-success">
-  <strong>VOTEMOS</strong> Elige un cadidato<a href="#" class="alert-link"> Leer este mensaje</a>.
+  <strong><?php echo $rol." ". $nombres." ".$apellidos ?></strong> Elige un candidato.
 </div>
     <form action="guardaVoto.php" method="post">
         <div class="row">
