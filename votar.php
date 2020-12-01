@@ -16,6 +16,7 @@ include "conexion.php";
 $sql="SELECT * FROM `votantes` WHERE `cedula` LIKE '$usuario' ";
 #echo $usuario;
 $result = $conn->query($sql);
+//pendiente implementar md5 para desencriptar la cedula 
 
 if ($result->num_rows > 0) {
     //Salida de datos del query
@@ -30,6 +31,12 @@ if ($result->num_rows > 0) {
              //echo "login correcto";
             // header("Location: perfil.php");
          }
+       if($rol=="administrador"){
+            echo '<a href="vistaReporte.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ir al reporte</a></html>
+            <a href="Registro.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">REGISTRAR NUEVO</a></html>
+            <a href="rolAdmin.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Panel de administracion</a></html>';
+       }
+     
     if($estado==0)
     {
 ?>
